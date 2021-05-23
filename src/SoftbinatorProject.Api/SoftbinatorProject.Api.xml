@@ -1,0 +1,423 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>SoftbinatorProject.Api</name>
+    </assembly>
+    <members>
+        <member name="M:SoftbinatorProject.Api.Controllers.AnswersController.GetAll(System.Int32)">
+            <summary>
+            See all answers to a question.
+            </summary>
+            <remarks>
+            You need to be registered to access this resource.
+            </remarks>
+        </member>
+        <member name="M:SoftbinatorProject.Api.Controllers.AnswersController.Get(System.Int32)">
+            <summary>
+            See an answer.
+            </summary>
+            <remarks>
+            You need to be registered to access this resource.
+            </remarks>
+        </member>
+        <member name="M:SoftbinatorProject.Api.Controllers.AnswersController.Post(System.Int32,SoftbinatorProject.Infrastructure.Data.DTOs.QnAPost)">
+            <summary>
+            Answer to a question.
+            </summary>
+            <remarks>
+            You need to be registered to access this resource.
+            </remarks>
+        </member>
+        <member name="M:SoftbinatorProject.Api.Controllers.AnswersController.Put(System.Int32,SoftbinatorProject.Infrastructure.Data.DTOs.QnAPost)">
+            <summary>
+            Update an answer.
+            </summary>
+            <remarks>
+            You need to be registered to access this resource.
+            </remarks>
+        </member>
+        <member name="M:SoftbinatorProject.Api.Controllers.AnswersController.Delete(System.Int32)">
+            <summary>
+            Delete an answer.
+            </summary>
+            <remarks>
+            You need to be registered to access this resource.
+            </remarks>
+        </member>
+        <member name="M:SoftbinatorProject.Api.Controllers.ChaptersController.GetAll(System.Int32)">
+            <summary>
+            See all chapters from a section.
+            </summary>
+            <remarks>
+            You need to be registered to access this resource.
+            </remarks>
+        </member>
+        <member name="M:SoftbinatorProject.Api.Controllers.ChaptersController.Get(System.Int32)">
+            <summary>
+            See a chapter.
+            </summary>
+            <remarks>
+            You need to be registered to access this resource.
+            </remarks>
+        </member>
+        <member name="M:SoftbinatorProject.Api.Controllers.ChaptersController.Post(SoftbinatorProject.Infrastructure.Data.DTOs.ChapterPost)">
+            <summary>
+            Create a chapter to your course's section.
+            </summary>
+            <remarks>
+            You need to be a creator to access this resource.
+            </remarks>
+        </member>
+        <member name="M:SoftbinatorProject.Api.Controllers.ChaptersController.Put(System.Int32,SoftbinatorProject.Infrastructure.Data.DTOs.ChapterPost)">
+            <summary>
+            Update a chapter from your course's section.
+            </summary>
+            <remarks>
+            You need to be a creator to access this resource.
+            </remarks>
+        </member>
+        <member name="M:SoftbinatorProject.Api.Controllers.ChaptersController.Delete(System.Int32)">
+            <summary>
+            Delete a chapter from your course's section.
+            </summary>
+            <remarks>
+            You need to be a creator or a moderator to access this resource.
+            </remarks>
+        </member>
+        <member name="M:SoftbinatorProject.Api.Controllers.CoursesController.Join(System.Int32)">
+            <summary>
+            Join a course to have access to it's resources.
+            </summary>
+            <remarks>
+            You need to be registered to access this resource.
+            </remarks>
+        </member>
+        <member name="M:SoftbinatorProject.Api.Controllers.CoursesController.Leave(System.Int32)">
+            <summary>
+            Leave a course.
+            </summary>
+            <remarks>
+            You need to be registered to access this resource.
+            </remarks>
+        </member>
+        <member name="M:SoftbinatorProject.Api.Controllers.CoursesController.GetAll(System.String,System.String,System.String,System.Int32)">
+            <summary>
+            See all courses.
+            </summary>
+            <remarks>
+            You need to be registered to access this resource. <br/>
+            You can filter courses by tags and sort them by different filters. <br/>
+            The available filters are : titleA, titleD, dateA, dateD.
+            </remarks>
+        </member>
+        <member name="M:SoftbinatorProject.Api.Controllers.CoursesController.Get(System.Int32)">
+            <summary>
+            See a course.
+            </summary>
+            <remarks>
+            You need to be registered to access this resource.
+            </remarks>
+        </member>
+        <member name="M:SoftbinatorProject.Api.Controllers.CoursesController.Post(SoftbinatorProject.Infrastructure.Data.DTOs.CoursePost)">
+            <summary>
+            Create a new course.
+            </summary>
+            <remarks>
+            You need to be a creator to access this resource.
+            </remarks>
+        </member>
+        <member name="M:SoftbinatorProject.Api.Controllers.CoursesController.Put(System.Int32,SoftbinatorProject.Infrastructure.Data.DTOs.CoursePost)">
+            <summary>
+            Update a course.
+            </summary>
+            <remarks>
+            You need to be a creator to access this resource.
+            </remarks>
+        </member>
+        <member name="M:SoftbinatorProject.Api.Controllers.CoursesController.Delete(System.Int32)">
+            <summary>
+            Delete a course.
+            </summary>
+            <remarks>
+            You need to be a creator or a moderator to access this resource.
+            </remarks>
+        </member>
+        <member name="M:SoftbinatorProject.Api.Controllers.QuestionsController.GetAll(System.Int32,System.String,System.Int32)">
+            <summary>
+            See all questions from a chapter.
+            </summary>
+            <remarks>
+            You need to be registered to access this resource.
+            </remarks>
+        </member>
+        <member name="M:SoftbinatorProject.Api.Controllers.QuestionsController.Get(System.Int32)">
+            <summary>
+            See a question.
+            </summary>
+            <remarks>
+            You need to be registered to access this resource.
+            </remarks>
+        </member>
+        <member name="M:SoftbinatorProject.Api.Controllers.QuestionsController.Post(System.Int32,SoftbinatorProject.Infrastructure.Data.DTOs.QnAPost)">
+            <summary>
+            Ask a question.
+            </summary>
+            <remarks>
+            You need to be registered to access this resource.
+            </remarks>
+        </member>
+        <member name="M:SoftbinatorProject.Api.Controllers.QuestionsController.Put(System.Int32,SoftbinatorProject.Infrastructure.Data.DTOs.QnAPost)">
+            <summary>
+            Update a question.
+            </summary>
+            <remarks>
+            You need to be registered to access this resource.
+            </remarks>
+        </member>
+        <member name="M:SoftbinatorProject.Api.Controllers.QuestionsController.Delete(System.Int32)">
+            <summary>
+            Delete a question.
+            </summary>
+            <remarks>
+            You need to be registered to access this resource.
+            </remarks>
+        </member>
+        <member name="M:SoftbinatorProject.Api.Controllers.RoleApplicationsController.Accept(System.Int32)">
+            <summary>
+            Accept a role application.
+            </summary>
+            <remarks>
+            You need to an admin to access this resource.
+            </remarks>
+        </member>
+        <member name="M:SoftbinatorProject.Api.Controllers.RoleApplicationsController.Decline(System.Int32)">
+            <summary>
+            Decline a role application.
+            </summary>
+            <remarks>
+            You need to an admin to access this resource.
+            </remarks>
+        </member>
+        <member name="M:SoftbinatorProject.Api.Controllers.RoleApplicationsController.Get">
+            <summary>
+            See all role applications.
+            </summary>
+            <remarks>
+            You need to an admin to access this resource.
+            </remarks>
+        </member>
+        <member name="M:SoftbinatorProject.Api.Controllers.RoleApplicationsController.GetActive">
+            <summary>
+            See all active role applications.
+            </summary>
+            <remarks>
+            You need to an admin to access this resource.
+            </remarks>
+        </member>
+        <member name="M:SoftbinatorProject.Api.Controllers.RoleApplicationsController.Get(System.Int32)">
+            <summary>
+            See a role application.
+            </summary>
+            <remarks>
+            You need to an admin to access this resource.
+            </remarks>
+        </member>
+        <member name="M:SoftbinatorProject.Api.Controllers.RoleApplicationsController.Post(SoftbinatorProject.Infrastructure.Data.DTOs.RoleApplicationPost)">
+            <summary>
+            Create a role application.
+            </summary>
+            <remarks>
+            You need to be registered to access this resource.
+            </remarks>
+        </member>
+        <member name="M:SoftbinatorProject.Api.Controllers.RoleApplicationsController.Delete(System.Int32)">
+            <summary>
+            Delete a role application.
+            </summary>
+            <remarks>
+            You need to an admin to access this resource.
+            </remarks>
+        </member>
+        <member name="M:SoftbinatorProject.Api.Controllers.RolesController.Assign(System.String,System.Int32)">
+            <summary>
+            Assign a user to a role.
+            </summary>
+            <remarks>
+            You need to an admin to access this resource.
+            </remarks>
+        </member>
+        <member name="M:SoftbinatorProject.Api.Controllers.RolesController.GetAll">
+            <summary>
+            See all roles.
+            </summary>
+            <remarks>
+            You need to an admin to access this resource.
+            </remarks>
+        </member>
+        <member name="M:SoftbinatorProject.Api.Controllers.RolesController.GetOwn">
+            <summary>
+            See own roles.
+            </summary>
+            <remarks>
+            You need to be registered to access this resource.
+            </remarks>
+        </member>
+        <member name="M:SoftbinatorProject.Api.Controllers.RolesController.Get(System.String)">
+            <summary>
+            See a user's roles.
+            </summary>
+            <remarks>
+            You need to an admin to access this resource.
+            </remarks>
+        </member>
+        <member name="M:SoftbinatorProject.Api.Controllers.RolesController.GetUsers(System.String)">
+            <summary>
+            See all users in a role.
+            </summary>
+            <remarks>
+            You need to an admin to access this resource.
+            </remarks>
+        </member>
+        <member name="M:SoftbinatorProject.Api.Controllers.RolesController.Post(SoftbinatorProject.Infrastructure.Data.DTOs.RolePost)">
+            <summary>
+            Update a role.
+            </summary>
+            <remarks>
+            You need to an admin to access this resource.
+            </remarks>
+        </member>
+        <member name="M:SoftbinatorProject.Api.Controllers.RolesController.Delete(System.Int32)">
+            <summary>
+            Delete a role.
+            </summary>
+            <remarks>
+            You need to an admin to access this resource.
+            </remarks>
+        </member>
+        <member name="M:SoftbinatorProject.Api.Controllers.SectionsController.GetAll(System.Int32)">
+            <summary>
+            See all sections from a course.
+            </summary>
+            <remarks>
+            You need to be registered to access this resource.
+            </remarks>
+        </member>
+        <member name="M:SoftbinatorProject.Api.Controllers.SectionsController.Get(System.Int32)">
+            <summary>
+            See a section.
+            </summary>
+            <remarks>
+            You need to be registered to access this resource.
+            </remarks>
+        </member>
+        <member name="M:SoftbinatorProject.Api.Controllers.SectionsController.Post(SoftbinatorProject.Infrastructure.Data.DTOs.SectionPost)">
+            <summary>
+            Create a section for your course.
+            </summary>
+            <remarks>
+            You need to be a creator to access this resource.
+            </remarks>
+        </member>
+        <member name="M:SoftbinatorProject.Api.Controllers.SectionsController.Put(System.Int32,SoftbinatorProject.Infrastructure.Data.DTOs.SectionPost)">
+            <summary>
+            Update a sections from your course.
+            </summary>
+            <remarks>
+            You need to be a creator to access this resource.
+            </remarks>
+        </member>
+        <member name="M:SoftbinatorProject.Api.Controllers.SectionsController.Delete(System.Int32)">
+            <summary>
+            Delete a section from your course.
+            </summary>
+            <remarks>
+            You need to be a creator or a moderator to access this resource.
+            </remarks>
+        </member>
+        <member name="M:SoftbinatorProject.Api.Controllers.TagsController.Assign(System.Int32,System.Int32)">
+            <summary>
+            Assign a tag to your course.
+            </summary>
+            <remarks>
+            You need to be a creator to access this resource.
+            </remarks>
+        </member>
+        <member name="M:SoftbinatorProject.Api.Controllers.TagsController.GetAll">
+            <summary>
+            See all the tags.
+            </summary>
+            <remarks>
+            You need to be registered to access this resource.
+            </remarks>
+        </member>
+        <member name="M:SoftbinatorProject.Api.Controllers.TagsController.Get(System.Int32)">
+            <summary>
+            See a tag.
+            </summary>
+            <remarks>
+            You need to be registered to access this resource.
+            </remarks>
+        </member>
+        <member name="M:SoftbinatorProject.Api.Controllers.TagsController.Post(SoftbinatorProject.Infrastructure.Data.DTOs.TagPost)">
+            <summary>
+            Create a tag.
+            </summary>
+            <remarks>
+            You need to be a moderator to access this resource.
+            </remarks>
+        </member>
+        <member name="M:SoftbinatorProject.Api.Controllers.TagsController.Put(System.Int32,SoftbinatorProject.Infrastructure.Data.DTOs.TagPost)">
+            <summary>
+            Update a tag.
+            </summary>
+            <remarks>
+            You need to be a moderator to access this resource.
+            </remarks>
+        </member>
+        <member name="M:SoftbinatorProject.Api.Controllers.TagsController.Delete(System.Int32)">
+            <summary>
+            Delete a tag.
+            </summary>
+            <remarks>
+            You need to be a moderator to access this resource.
+            </remarks>
+        </member>
+        <member name="M:SoftbinatorProject.Api.Controllers.UsersController.GetAll">
+            <summary>
+            See all user profiles
+            </summary>
+            <remarks>
+            You need to be registered to access this resource.
+            </remarks>
+        </member>
+        <member name="M:SoftbinatorProject.Api.Controllers.UsersController.GetOwn">
+            <summary>
+            See your own profile
+            </summary>
+            <remarks>
+            You need to be registered to access this resource.
+            </remarks>
+        </member>
+        <member name="M:SoftbinatorProject.Api.Controllers.UsersController.Get(System.String)">
+            <summary>
+            See a specific user profile
+            </summary>
+            <remarks>
+            You need to be registered to access this resource.
+            </remarks>
+        </member>
+        <member name="M:SoftbinatorProject.Api.Controllers.UsersController.Register(SoftbinatorProject.Infrastructure.Data.DTOs.UserPost)">
+            <summary>
+            Register and create your profile
+            </summary>
+        </member>
+        <member name="M:SoftbinatorProject.Api.Controllers.UsersController.Put(SoftbinatorProject.Infrastructure.Data.DTOs.UserPost)">
+            <summary>
+            Update your profile
+            </summary>
+            <remarks>
+            You need to be registered to access this resource.
+            </remarks>
+        </member>
+    </members>
+</doc>
